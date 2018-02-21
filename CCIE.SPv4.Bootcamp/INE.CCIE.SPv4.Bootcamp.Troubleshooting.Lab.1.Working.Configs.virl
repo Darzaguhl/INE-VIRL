@@ -9,7 +9,7 @@
     <node name="R1" type="SIMPLE" subtype="CSR1000v" location="240,72">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:47:21 UTC Fri Jan 12 2018
+! Last configuration change at 17:31:16 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -111,7 +111,7 @@ crypto pki certificate chain TP-self-signed-2218225626
 !
 !
 !
-license udi pid CSR1000V sn 9811FMSMHNU
+license udi pid CSR1000V sn 9QJ7YSLWQR7
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -316,7 +316,7 @@ end</entry>
     <node name="R2" type="SIMPLE" subtype="CSR1000v" location="240,204">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:48:29 UTC Fri Jan 12 2018
+! Last configuration change at 17:40:01 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -410,7 +410,7 @@ crypto pki certificate chain TP-self-signed-3531813211
 !
 !
 !
-license udi pid CSR1000V sn 9E2PPSMAMM1
+license udi pid CSR1000V sn 9GB8VLZDXDU
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -614,6 +614,7 @@ router bgp 123
   neighbor 13.13.13.13 send-community extended
   neighbor 13.13.13.13 inherit peer-policy RR_CLIENTS
   neighbor 14.14.14.14 activate
+  neighbor 14.14.14.14 send-community extended
   neighbor 14.14.14.14 next-hop-unchanged
  exit-address-family
  !
@@ -724,7 +725,7 @@ end</entry>
     <node name="R3" type="SIMPLE" subtype="CSR1000v" location="240,468">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:48:43 UTC Fri Jan 12 2018
+! Last configuration change at 17:39:21 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -819,7 +820,7 @@ crypto pki certificate chain TP-self-signed-48631291
 !
 !
 !
-license udi pid CSR1000V sn 9VOTMBIPS3Y
+license udi pid CSR1000V sn 9WEU9650LY2
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -895,6 +896,7 @@ interface GigabitEthernet2.37
 interface GigabitEthernet2.312
  encapsulation dot1Q 312
  ip address 10.3.12.3 255.255.255.0
+ ip ospf network point-to-point
  ip ospf 1 area 0
  ipv6 address 2001:10:3:12::3/64
  ospfv3 network point-to-point
@@ -1001,7 +1003,7 @@ end</entry>
     <node name="R4" type="SIMPLE" subtype="CSR1000v" location="312,468">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:48:57 UTC Fri Jan 12 2018
+! Last configuration change at 17:32:56 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -1082,7 +1084,7 @@ crypto pki certificate chain TP-self-signed-1079546728
 !
 !
 !
-license udi pid CSR1000V sn 9XBNO5M79LZ
+license udi pid CSR1000V sn 9LFSVO7OXPI
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -1218,7 +1220,7 @@ end</entry>
     <node name="R5" type="SIMPLE" subtype="CSR1000v" location="324,72">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:48:52 UTC Fri Jan 12 2018
+! Last configuration change at 17:32:59 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -1299,7 +1301,7 @@ crypto pki certificate chain TP-self-signed-3214708155
 !
 !
 !
-license udi pid CSR1000V sn 9V63MVIC7HT
+license udi pid CSR1000V sn 9A6OU25ISYG
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -1435,7 +1437,7 @@ end</entry>
     <node name="R6" type="SIMPLE" subtype="CSR1000v" location="492,72">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:48:57 UTC Fri Jan 12 2018
+! Last configuration change at 17:32:48 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -1516,7 +1518,7 @@ crypto pki certificate chain TP-self-signed-321365217
 !
 !
 !
-license udi pid CSR1000V sn 9PZT45B9L0B
+license udi pid CSR1000V sn 98JT27Y1D5X
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -1639,7 +1641,7 @@ end</entry>
     <node name="R7" type="SIMPLE" subtype="CSR1000v" location="396,468">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:49:10 UTC Fri Jan 12 2018
+! Last configuration change at 17:33:07 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -1720,7 +1722,7 @@ crypto pki certificate chain TP-self-signed-325565931
 !
 !
 !
-license udi pid CSR1000V sn 9P5Q37TQQAG
+license udi pid CSR1000V sn 91M6YDFGP6S
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -1853,7 +1855,7 @@ end</entry>
     <node name="R8" type="SIMPLE" subtype="CSR1000v" location="408,72">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:49:14 UTC Fri Jan 12 2018
+! Last configuration change at 17:33:02 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -1934,7 +1936,7 @@ crypto pki certificate chain TP-self-signed-51374854
 !
 !
 !
-license udi pid CSR1000V sn 9CSE34AFRKR
+license udi pid CSR1000V sn 95BVGIJMZNL
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -2018,7 +2020,9 @@ router bgp 8
   network 8.8.8.8 mask 255.255.255.255
   neighbor 10.8.9.9 activate
   neighbor 10.8.9.9 route-map FROM_AS_9 in
+  neighbor 10.8.9.9 filter-list 1 out
   neighbor 10.8.11.11 activate
+  neighbor 10.8.11.11 filter-list 1 out
  exit-address-family
  !
  address-family ipv6
@@ -2037,6 +2041,7 @@ ip http server
 ip http authentication local
 ip http secure-server
 !
+ip as-path access-list 1 permit ^$
 ip ssh server algorithm encryption aes128-ctr aes192-ctr aes256-ctr
 ip ssh server algorithm authentication password
 ip ssh client algorithm encryption aes128-ctr aes192-ctr aes256-ctr
@@ -2086,7 +2091,7 @@ end</entry>
     <node name="R9" type="SIMPLE" subtype="CSR1000v" location="240,336">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:49:17 UTC Fri Jan 12 2018
+! Last configuration change at 17:33:19 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -2178,7 +2183,7 @@ crypto pki certificate chain TP-self-signed-1804261350
 !
 !
 !
-license udi pid CSR1000V sn 9GQCGQAUXG7
+license udi pid CSR1000V sn 95JV0IRD4MP
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -2333,7 +2338,7 @@ end</entry>
     <node name="R10" type="SIMPLE" subtype="CSR1000v" location="576,72">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:47:22 UTC Fri Jan 12 2018
+! Last configuration change at 17:31:12 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -2414,7 +2419,7 @@ crypto pki certificate chain TP-self-signed-2367346627
 !
 !
 !
-license udi pid CSR1000V sn 9SANX7HUPU9
+license udi pid CSR1000V sn 99MCVDFDAOY
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -2545,7 +2550,7 @@ end</entry>
     <node name="R11" type="SIMPLE" subtype="CSR1000v" location="636,240">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:47:35 UTC Fri Jan 12 2018
+! Last configuration change at 17:31:22 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -2626,7 +2631,7 @@ crypto pki certificate chain TP-self-signed-3883307542
 !
 !
 !
-license udi pid CSR1000V sn 9Z0N4G922ER
+license udi pid CSR1000V sn 9P4GE7HF1KX
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -2778,7 +2783,7 @@ end</entry>
     <node name="R12" type="SIMPLE" subtype="CSR1000v" location="696,240">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:47:40 UTC Fri Jan 12 2018
+! Last configuration change at 17:31:30 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -2870,7 +2875,7 @@ crypto pki certificate chain TP-self-signed-1266773485
 !
 !
 !
-license udi pid CSR1000V sn 9IV7904I2TO
+license udi pid CSR1000V sn 9YJJ2QD872T
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -3042,7 +3047,7 @@ end</entry>
     <node name="R13" type="SIMPLE" subtype="CSR1000v" location="768,240">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:47:49 UTC Fri Jan 12 2018
+! Last configuration change at 17:41:07 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -3060,7 +3065,9 @@ boot-end-marker
 vrf definition CE
  rd 33:33
  route-target export 33:33
+ route-target export 3:3
  route-target import 33:33
+ route-target import 3:3
  !
  address-family ipv4
  exit-address-family
@@ -3134,7 +3141,7 @@ crypto pki certificate chain TP-self-signed-4065964133
 !
 !
 !
-license udi pid CSR1000V sn 9XB9SULDQKQ
+license udi pid CSR1000V sn 9C01QYQ5KO7
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -3299,7 +3306,7 @@ end</entry>
     <node name="R14" type="SIMPLE" subtype="CSR1000v" location="828,240">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:47:53 UTC Fri Jan 12 2018
+! Last configuration change at 17:31:45 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -3380,7 +3387,7 @@ crypto pki certificate chain TP-self-signed-2459937040
 !
 !
 !
-license udi pid CSR1000V sn 9VT85XW690K
+license udi pid CSR1000V sn 917IBG0UIFI
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -3516,7 +3523,7 @@ end</entry>
     <node name="R15" type="SIMPLE" subtype="CSR1000v" location="888,240">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:47:54 UTC Fri Jan 12 2018
+! Last configuration change at 17:32:04 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -3597,7 +3604,7 @@ crypto pki certificate chain TP-self-signed-3128980604
 !
 !
 !
-license udi pid CSR1000V sn 9AT05WYZ2MW
+license udi pid CSR1000V sn 9OD9XF2IN9P
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -3712,7 +3719,7 @@ end</entry>
     <node name="R16" type="SIMPLE" subtype="CSR1000v" location="634,400">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:48:04 UTC Fri Jan 12 2018
+! Last configuration change at 17:32:06 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -3793,7 +3800,7 @@ crypto pki certificate chain TP-self-signed-2423851387
 !
 !
 !
-license udi pid CSR1000V sn 96IPCRGWQV0
+license udi pid CSR1000V sn 9ELAY7DWP8J
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -3938,7 +3945,7 @@ end</entry>
     <node name="R17" type="SIMPLE" subtype="CSR1000v" location="706,400">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:48:17 UTC Fri Jan 12 2018
+! Last configuration change at 17:32:15 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -4030,7 +4037,7 @@ crypto pki certificate chain TP-self-signed-4245171263
 !
 !
 !
-license udi pid CSR1000V sn 98GMYDHBBIK
+license udi pid CSR1000V sn 92RFHEYI6V3
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -4206,7 +4213,7 @@ end</entry>
     <node name="R18" type="SIMPLE" subtype="CSR1000v" location="766,400">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:48:16 UTC Fri Jan 12 2018
+! Last configuration change at 17:32:22 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -4287,7 +4294,7 @@ crypto pki certificate chain TP-self-signed-3513785742
 !
 !
 !
-license udi pid CSR1000V sn 9ZB3I84CDLJ
+license udi pid CSR1000V sn 90Q6PD0KQCM
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -4422,7 +4429,7 @@ end</entry>
     <node name="R19" type="SIMPLE" subtype="CSR1000v" location="826,400">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:48:31 UTC Fri Jan 12 2018
+! Last configuration change at 17:32:21 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -4503,7 +4510,7 @@ crypto pki certificate chain TP-self-signed-120961135
 !
 !
 !
-license udi pid CSR1000V sn 9MXCO5HEPJC
+license udi pid CSR1000V sn 9C21Z83PPF8
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -4634,7 +4641,7 @@ end</entry>
     <node name="R20" type="SIMPLE" subtype="CSR1000v" location="886,400">
         <extensions>
             <entry key="config" type="string">!
-! Last configuration change at 19:48:32 UTC Fri Jan 12 2018
+! Last configuration change at 17:32:30 UTC Wed Feb 7 2018
 !
 version 16.5
 service timestamps debug datetime msec
@@ -4715,7 +4722,7 @@ crypto pki certificate chain TP-self-signed-1383894549
 !
 !
 !
-license udi pid CSR1000V sn 9ZE8KC38R1X
+license udi pid CSR1000V sn 9VS2R2ZG503
 license accept end user agreement
 license boot level ax
 diagnostic bootup level minimal
@@ -4830,7 +4837,7 @@ end</entry>
     <node name="XR1" type="SIMPLE" subtype="IOS XRv" location="576,168">
         <extensions>
             <entry key="config" type="string">!! IOS XR Configuration 6.1.3
-!! Last configuration change at Fri Jan 12 19:49:52 2018 by CVAC
+!! Last configuration change at Wed Feb  7 17:38:55 2018 by cisco
 !
 !  IOS-XR Config generated on 2016-04-21 17:05
 ! by autonetkit_0.21.4
@@ -4965,7 +4972,7 @@ end-policy
 !
 router isis 1
  apply-group ISIS_OPTIONS
- is-type level-1
+ is-type level-2-only
  net 00.0000.0000.0021.00
  address-family ipv4 unicast
   metric-style wide
@@ -4990,7 +4997,7 @@ router isis 1
 !
 router ospf 100
  vrf B
-  domain-id type 0005 value 000000026400
+  domain-id type 0005 value 000000640200
   redistribute bgp 123
   area 1
    interface GigabitEthernet0/0/0/0.411
@@ -5061,7 +5068,7 @@ end</entry>
     <node name="XR2" type="SIMPLE" subtype="IOS XRv" location="576,264">
         <extensions>
             <entry key="config" type="string">!! IOS XR Configuration 6.1.3
-!! Last configuration change at Fri Jan 12 19:49:58 2018 by CVAC
+!! Last configuration change at Wed Feb  7 17:33:52 2018 by CVAC
 !
 !  IOS-XR Config generated on 2016-04-21 17:05
 ! by autonetkit_0.21.4
@@ -5308,7 +5315,7 @@ end</entry>
     <node name="XR3" type="SIMPLE" subtype="IOS XRv" location="480,468">
         <extensions>
             <entry key="config" type="string">!! IOS XR Configuration 6.1.3
-!! Last configuration change at Fri Jan 12 19:50:10 2018 by CVAC
+!! Last configuration change at Wed Feb  7 18:27:20 2018 by cisco
 !
 !  IOS-XR Config generated on 2016-04-21 17:05
 ! by autonetkit_0.21.4
@@ -5543,7 +5550,7 @@ end</entry>
     <node name="XR4" type="SIMPLE" subtype="IOS XRv" location="564,468">
         <extensions>
             <entry key="config" type="string">!! IOS XR Configuration 6.1.3
-!! Last configuration change at Fri Jan 12 19:50:09 2018 by CVAC
+!! Last configuration change at Wed Feb  7 17:34:02 2018 by CVAC
 !
 !  IOS-XR Config generated on 2016-04-21 17:05
 ! by autonetkit_0.21.4
@@ -5937,16 +5944,7 @@ menu main_menu text 23. Connect to XR3
 menu main_menu command 23. telnet 172.16.1.123 /vrf Mgmt-intf
 menu main_menu text 24. Connect to XR4
 menu main_menu command 24. telnet 172.16.1.124 /vrf Mgmt-intf
-menu main_menu text 25. Connect to XR1 Console
-menu main_menu command 25. telnet 172.16.1.100 10021 /vrf Mgmt-intf
-menu main_menu text 26. Connect to XR2 Console
-menu main_menu command 26. telnet 172.16.1.100 10022 /vrf Mgmt-intf
-menu main_menu text 27. Connect to XR3 Console
-menu main_menu command 27. telnet 172.16.1.100 10023 /vrf Mgmt-intf
-menu main_menu text 28. Connect to XR4 Console
-menu main_menu command 28. telnet 172.16.1.100 10024 /vrf Mgmt-intf
-menu main_menu text C. Console Menu
-menu main_menu command C. menu console_menu 
+
 menu main_menu text Q. Quit
 menu main_menu command Q. Exit
 menu main_menu clear-screen
